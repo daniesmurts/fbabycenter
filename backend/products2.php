@@ -150,16 +150,7 @@ session_start();
 <th>Name</th>
 <th>Price</th>
 <th>Description</th>
-<!---
-<th>Color</th>
-<th>Size</th>
-<th>Quantity</th>
-<th>available</th>
-<th>Discount</th>
-<th>New</th>
-<th>Cover</th>
-<th>Cover2</th>
-<th>Cover3</th> -->
+
 <th>Actions</th>
 <th>Actions</th>
 </tr>
