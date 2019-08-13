@@ -120,7 +120,7 @@ caption {
   letter-spacing: 0.4px
 }
 .page-item.active .page-link{
-background-color: #00786c !important;
+background-color: #16c689 !important;
 color: #fff!important;
 }
 .overline {
@@ -138,7 +138,7 @@ color: #fff!important;
 
 
 .bg-inverse {
-  background-color: #009688 !important;
+  background-color: #16c689 !important;
   border-radius: 0 4px 0 0;
   color: #fff;
   min-height: 80px;
@@ -179,9 +179,9 @@ color: #fff!important;
 }
 
 .btn-info2 {
-  /* background-color: #009688; */
+  /* background-color: #16c689; */
   width: auto;
-  background: #009688 !important;
+  background: #16c689 !important;
   color: #fff !important;
   font-size: 16px;
   border: none;
@@ -220,7 +220,7 @@ color: #fff!important;
 
 
 .submit:hover {
-  background: #00786c;
+  background: #16c689;
 }
 
 
@@ -234,8 +234,8 @@ color: #fff!important;
 .setting_add:hover,
 .setting_edit:hover {
   background-color: #FAFAFA;
-  color: #009688;
-  border-bottom: 1px solid #009688;
+  color: #16c689;
+  border-bottom: 1px solid #16c689;
 }
 
 
@@ -251,7 +251,7 @@ color: #fff!important;
 }
 
 .counter:hover {
-  border: 1px solid #009688;
+  border: 1px solid #16c689;
 }
 
 .count-title {
@@ -282,12 +282,12 @@ color: #fff!important;
 }
 
 .fa-green {
-  color: #009688;
+  color: #16c689;
 }
 
 
 .sidebar a:hover {
-  color: #009688;
+  color: #16c689;
   text-decoration: none;
 }
 
@@ -528,7 +528,7 @@ label {
 
 
 .edit_icon {
-  color: #00786c;
+  color: #16c689;
   text-decoration: none !important;
   margin-top: 30px;
 }
@@ -541,7 +541,7 @@ label {
 
 .edit_icon:hover .fa-pencil,
 .delete_icon:hover .fa-trash-o {
-  color: #009688;
+  color: #16c689;
   text-decoration: none !important;
 }
 
@@ -753,7 +753,7 @@ input {
 .login-show button {
   max-width: 150px;
   width: 100%;
-  background: #009688;
+  background: #16c689;
   color: #f9f9f9;
   border: none;
   padding: 10px;
@@ -861,7 +861,7 @@ a {
 /* css home */
 
 .bg-inverse {
-  background-color: #009688 !important;
+  background-color: #16c689 !important;
   border-radius: 0 4px 0 0;
   color: #fff;
   min-height: 80px;

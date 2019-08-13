@@ -175,7 +175,7 @@
 								<li class="color"><a href="#" style="background: #b19c83;"></a></li>
 								<li class="color"><a href="#" style="background: #000000;"></a></li>
 								<li class="color"><a href="#" style="background: #999999;"></a></li>
-								<li class="color"><a href="#" style="background: #009688;"></a></li>
+								<li class="color"><a href="#" style="background: #16c689;"></a></li>
 								<li class="color"><a href="#" style="background: #df3b3b;"></a></li>
 								<li class="color"><a href="#" style="background: #ffffff; border: solid 1px #e1e1e1;"></a></li>
 							</ul>
