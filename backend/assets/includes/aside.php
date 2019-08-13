@@ -1,4 +1,4 @@
-<!-- <div class="sidebar">
+<div class="sidebar">
     <a href="/backend/home.php">
         <h4 class="ml-3">Home</h4>
     </a>
@@ -21,7 +21,7 @@
         <li><a href="/backend/add_review.php">Add Latest reviewed</a></li>
         <li><a href="/backend/add_hot_deal.php">Add Hot Deal</a></li>
     </ul>
-</div> -->
+</div> 
 
 
 
@@ -49,7 +49,7 @@
             </ul>
         </li>
 
-        <!-------
+        
         <li>
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update</a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -68,7 +68,7 @@
                 <li><a href="/backend/add_hot_deal.php">Add Hot Deal</a></li>
                 <li><a href="/backend/add_brand.php">Add Brand</a></li>
             </ul>
-        </li> --->
+        </li>  
         
     </ul>
 
