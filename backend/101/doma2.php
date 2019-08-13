@@ -130,7 +130,7 @@ session_start();
             <button type="button" id="add_button" data-toggle="modal" data-target="#productModal" class="btn btn-info btn-lg">Add</button>
           </div>
              
-                <?php include("product_table.php"); ?>      
+                <?php include("table_product.php"); ?>      
                           
             
                      

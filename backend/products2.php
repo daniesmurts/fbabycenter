@@ -150,7 +150,6 @@ session_start();
 <th>Name</th>
 <th>Price</th>
 <th>Description</th>
-
 <th>Actions</th>
 <th>Actions</th>
 </tr>

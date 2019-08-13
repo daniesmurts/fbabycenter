@@ -733,7 +733,7 @@ select option
 	right: 0;
 	width: 50px;
 	height: 100%;
-	background: #16c689;
+	background: #fda005;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -1385,7 +1385,7 @@ select option
 {
 	font-size: 24px;
 	font-weight: 500;
-	color: #df3b3b;
+	color: #16c689;
 }
 .available
 {
@@ -1427,7 +1427,7 @@ select option
 	left: 0;
 	height: 100%;
 	border-radius: 5px;
-	background: #16c689;
+	background: #fda005;
 }
 .deals_timer
 {
@@ -2718,11 +2718,11 @@ select option
 }
 .bestsellers_slider .slick-dots li:hover
 {
-	background: #16c689;
+	background: #fda005;
 }
 .bestsellers_slider .slick-dots li.slick-active
 {
-	background: #16c689;
+	background: #fda005;
 }
 .bestsellers_slider .slick-dots li:last-child
 {
