@@ -93,7 +93,7 @@ session_start();
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapepr">
 		<!-- sidebar -->
 		<?php include("assets/includes/aside.php"); ?>
 		<!-- page content -->

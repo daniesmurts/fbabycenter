@@ -354,7 +354,7 @@ session_start();
 
             
 <?php
-   $cover225="<script>document.writeln(cover);</script>";
+   $cover225=  "<script>document.writeln(cover);</script>";
 ?>
 
 <img src="assets/posted_images/<?php echo $cover225; ?>" width="20" height="20">

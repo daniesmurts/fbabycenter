@@ -41,6 +41,15 @@
             </ul>
         </li>
 
+
+        <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Add / Update</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu"> 
+                <li><a href="/backend/101/index.php">Add A Product</a></li>
+            </ul>
+        </li>
+
+        <!-------
         <li>
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update</a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -59,7 +68,7 @@
                 <li><a href="/backend/add_hot_deal.php">Add Hot Deal</a></li>
                 <li><a href="/backend/add_brand.php">Add Brand</a></li>
             </ul>
-        </li>
+        </li> --->
         
     </ul>
 
