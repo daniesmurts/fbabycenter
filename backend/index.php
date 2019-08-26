@@ -69,7 +69,7 @@ session_start();
       <?php include("navbar.php"); ?>
 
       <div class="container">
- 
+
 
 
         <div class="row">
@@ -97,7 +97,7 @@ session_start();
 
           </div>
         </div>
-        
+
 
         <!-- Add_Edit Modal -->
         <?php include("add_update_modal.php"); ?>
@@ -110,13 +110,13 @@ session_start();
 
 
         <!-----######################## END DELETE MODAL ############################################################---->
- 
-    <div class="row">
+
+        <div class="row">
           <div class="col-md-12 col-sm-12">
 
-            <form  action="" method="post" class="form-inline">
+            <!-- <form action="" method="post" class="form-inline">
               <div class="form-group">
-                <label for="pwd">See All Products in  :</label>
+                <label for="pwd">See All Products in :</label>
                 <?php 
                    
                   require_once 'connexion.php';
@@ -134,34 +134,108 @@ session_start();
                   <?php } ?>
 
                 </select>
-                
-              </div>
-              <input type="hidden" id="product_block_title" value="<?php echo $see_block_title; ?>"> 
-              <button id="send_block_id" name="send_block_id" class="btn btn-success">Go !</button>
 
-            </form>
+              </div>
+
+             
+              <input type="hidden" id="product_block_title" value="<?php echo $see_block_title; ?>"> 
+              <button id="send_block_id" name="send_block_id" class="btn btn-info3">Go !</button>
+
+            </form> -->
+
+            <form id="app-cover" action="" method="post">
+            <div id="select-box">
+                    <input type="checkbox" class="options-view-button-css"  name="product_block_id2" id="product_block_id2">
+                    <div id="select-button" class="brd">
+                            <div id="selected-value">
+                                <span>All Products</span>
+                            </div>
+                            <?php 
+                   
+                   require_once 'connexion.php';
+                    $q = "SELECT * FROM page_block ORDER BY  title ASC";        
+                    $r = mysqli_query($dbc,$q); 
+                     ?>
+                            <div id="chevrons">
+                                    <i class="fas fa-chevron-up"></i>
+                                    <i class="fas fa-chevron-down"></i>
+                            </div>
+                    </div>
+                    <?php  
+                  while ($data = mysqli_fetch_array($r)){
+                   $see_block_id = $data['id'];
+                   $see_block_title = $data['title']; 
+                   ?>
+                    <div id="options">
+                             <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="<?php echo $see_block_id;?>">
+                                    <input class="s-c bottom" type="radio" name="platform" value="<?php echo $see_block_id;?>">
+                                    <i class="fab fa-codepen"></i>
+                                    <span class="label"> <?php echo $see_block_title; ?></span>
+                                    <span class="opt-val"> <?php echo $see_block_title; ?></span>
+                            </div>
+                  <?php } ?>          
+                          <!--  <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="dribbble">
+                                    <input class="s-c bottom" type="radio" name="platform" value="dribbble">
+                                    <i class="fab fa-dribbble"></i>
+                                    <span class="label">Dribbble</span>
+                                    <span class="opt-val">Dribbble</span>
+                            </div>
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="behance">
+                                    <input class="s-c bottom" type="radio" name="platform" value="behance">
+                                    <i class="fab fa-behance"></i>
+                                    <span class="label">Behance</span>
+                                    <span class="opt-val">Behance</span>
+                            </div>
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="hackerrank">
+                                    <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
+                                    <i class="fab fa-hackerrank"></i>
+                                    <span class="label">HackerRank</span>
+                                    <span class="opt-val">HackerRank</span>
+                            </div>
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="stackoverflow">
+                                    <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
+                                    <i class="fab fa-stack-overflow"></i>
+                                    <span class="label">StackOverflow</span>
+                                    <span class="opt-val">StackOverflow</span>
+                            </div>
+                            <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="freecodecamp">
+                                    <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
+                                    <i class="fab fa-free-code-camp"></i>
+                                    <span class="label">FreeCodeCamp</span>
+                                    <span class="opt-val">FreeCodeCamp</span>
+                            </div> -->
+                            <div id="option-bg"></div>
+                    </div>
+            </div>
+    </form>
 
           </div>
 
-     </div>
-     
-     
-  
+        </div>
+
+
+
 
 
         <div class="row">
-          
-             <?php  
+
+          <?php  
              if(isset($_POST['send_block_id'])){
                  $product_block_id2 = $_POST['product_block_id2'];
               include('product_table.php');  
              }
-            ?> 
-          
+            ?>
+
         </div>
-        
-        
-             
+
+
+
 
 
 
@@ -194,11 +268,10 @@ session_start();
 
 
   <script type="text/javascript" language="javascript">
-  
-  $(document).ready(function(){  
-      $('#product_data').DataTable();  
- });
- 
+    $(document).ready(function () {
+      $('#product_data').DataTable();
+    });
+
     $(document).ready(function () {
       $('#add_button').click(function () {
         $('#product_form')[0].reset();
@@ -210,25 +283,25 @@ session_start();
         $('#product_uploaded_cover3').html('');
       });
 
-/***
- 
-    var dataTable = $('#product_data').DataTable({
-        "processing": true,
-        "serverSide": true,
-        "order": [],
-        "ajax": {
-          url: "fetch.php",
-          type: "POST",
-        },
-        "columnDefs": [{
-          "targets": [0, 3, 4],
-          "orderable": false,
-        }, ],
+      /***
+       
+          var dataTable = $('#product_data').DataTable({
+              "processing": true,
+              "serverSide": true,
+              "order": [],
+              "ajax": {
+                url: "fetch.php",
+                type: "POST",
+              },
+              "columnDefs": [{
+                "targets": [0, 3, 4],
+                "orderable": false,
+              }, ],
 
-      });
+            });
 
-***/
- /***
+      ***/
+      /***
       $('#send_block_id').click(function () {
         event.preventDefault();
     var pdt_block_id = $('#product_block_id2').val();
@@ -251,11 +324,11 @@ session_start();
 });
 
 ****/
- 
-      
-     
- 
-    
+
+
+
+
+
       $(document).on('submit', '#product_form', function (event) {
         event.preventDefault();
         var categ_id = $('#product_categ_id').val();
@@ -318,9 +391,9 @@ session_start();
           alert("Both Fields are Required");
         }
       });
-      
-      
-       
+
+
+
 
       $(document).on('click', '.update', function () {
         var product_id = $(this).attr("id");
@@ -382,7 +455,10 @@ session_start();
 
 
     });
-  </script> 
+  </script>
+
+
+   
 
 
 </body>
