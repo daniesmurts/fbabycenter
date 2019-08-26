@@ -1,19 +1,19 @@
 
-<?php 
-$b_categ_id = 3;
+<?php  
 /*$q = "SELECT * FROM best_sellers WHERE b_categ_id='$b_categ_id' ORDER BY id DESC LIMIT 12";   */
 
-$q = "SELECT * FROM best_sellers WHERE b_categ_id='$b_categ_id' ORDER BY id DESC LIMIT 12";  
+$q = "SELECT * FROM all_products  WHERE block_id='9'  ORDER BY id DESC LIMIT 12";  
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title']; 
 $descpt =  $data['descpt']; 
 $cover =  $data['cover']; 
-$categ_id =  $data['categ_id']; 
-$b_categ_id =  $data['b_categ_id']; 
+$categ_id =  $data['categ_id'];  
 $new_price =  $data['new_price'];
 $old_price =  $data['old_price'];  
 ?>
+
+ 
 
 <!-- Best Sellers Item -->
 <div class="bestsellers_item discount">
