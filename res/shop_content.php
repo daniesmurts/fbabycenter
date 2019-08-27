@@ -43,7 +43,7 @@ $i++;
 require_once 'backend/assets/includes/connexion.php';
 if(isset($_GET['view'])){  
 $categ_id =  $_GET['view'];     
-$q = "SELECT * FROM products WHERE categ_id = $categ_id ORDER BY id DESC";            
+$q = "SELECT * FROM all_products WHERE categ_id = $categ_id ORDER BY id DESC";            
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title'];  
@@ -60,7 +60,7 @@ $discount = $data['discount'];
         <div class="product_item">
             <div class="product_border"></div>
             <div class="product_image d-flex flex-column align-items-center justify-content-center mb-2"><img
-                    src="backend/assets/posted_images/<?php echo $cover; ?>" alt=""></div>
+                    src="backend/upload/<?php echo $cover; ?>" alt=""></div>
             <div class="product_content">
                 <div class="product_price">UGX <?php echo $price; ?></div>
                 <div class="product_name">

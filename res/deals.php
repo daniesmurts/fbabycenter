@@ -16,7 +16,7 @@ while ($data = mysqli_fetch_array($r)){
 $title = $data['title']; 
 $cover =  $data['cover'];
 $category_id = $data['categ_id'];
-$old_price = $data['old_price']; 
+$old_price = $data['price']; 
 $new_price = $data['new_price']; 
 $quantity  = $data['quantity']; 
 $sold  = $data['available']; 
@@ -29,7 +29,7 @@ $sold  = $data['available'];
 ?>
 				<!-- Deals Item -->
 				<div class="owl-item deals_item">
-					<div class="deals_image"><img src="backend/assets/posted_images/<?php echo $cover; ?>" alt=""></div>
+					<div class="deals_image"><img src="backend/upload/<?php echo $cover; ?>" alt=""></div>
 					<div class="deals_content">
 						<div class="deals_info_line d-flex flex-row justify-content-start">
 							<div class="deals_item_category"><a href="#"><?php echo $category_title; ?></a></div>
