@@ -1,7 +1,7 @@
 <div class="featured_slider slider">
 <?php 
 
-$q = "SELECT * FROM best_rated LIMIT 16";            
+$q = "SELECT * FROM all_products  WHERE block_id='4'  LIMIT 16";            
 $r = mysqli_query($dbc,$q);
 $i = 0;
 while ($data = mysqli_fetch_array($r)){ 

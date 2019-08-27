@@ -2,7 +2,7 @@
 
     <?php 
 
-$q = "SELECT * FROM featured LIMIT 16";            
+$q = "SELECT * FROM all_products  WHERE block_id='2' LIMIT 16";            
 $r = mysqli_query($dbc,$q);
 $i = 0;
 while ($data = mysqli_fetch_array($r)){ 

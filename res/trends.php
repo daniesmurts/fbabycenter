@@ -1,7 +1,7 @@
 <!-- Trends Slider Item -->
 <?php 
 
-$q = "SELECT * FROM trends ORDER BY id DESC LIMIT 6";            
+$q = "SELECT * FROM all_products  WHERE block_id='7'  ORDER BY id DESC LIMIT 6";            
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title']; 

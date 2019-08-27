@@ -9,7 +9,7 @@
 				<?php 
 
 require_once 'backend/assets/includes/connexion.php';
-$q = "SELECT * FROM dow LIMIT 3";            
+$q = "SELECT * FROM all_products  WHERE block_id='5'  LIMIT 3";            
 $r = mysqli_query($dbc,$q); 
 while ($data = mysqli_fetch_array($r)){ 
 

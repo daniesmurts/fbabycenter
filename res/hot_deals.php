@@ -5,7 +5,7 @@
 
 <?php 
 
-$q = "SELECT * FROM hot_deals ORDER BY id DESC LIMIT 6";    
+$q = "SELECT * FROM all_products  WHERE block_id='8'  ORDER BY id DESC LIMIT 6";    
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title']; 

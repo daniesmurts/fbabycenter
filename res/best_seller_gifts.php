@@ -3,7 +3,7 @@
 $b_categ_id = 2;
 /*$q = "SELECT * FROM best_sellers WHERE b_categ_id='$b_categ_id' ORDER BY id DESC LIMIT 12";   */
 
-$q = "SELECT * FROM best_sellers WHERE b_categ_id='$b_categ_id' ORDER BY id DESC LIMIT 12";  
+$q = "SELECT * FROM all_products  WHERE block_id='13'  ORDER BY id DESC LIMIT 12";  
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title']; 
