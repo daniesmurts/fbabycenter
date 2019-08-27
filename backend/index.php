@@ -37,15 +37,6 @@ session_start();
   <!-- FontAwesome JS -->
   <script src="https://kit.fontawesome.com/6d64fe8c14.js"></script>
 
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
-
-
-
-  <!-- fonts -->
-  <!--<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
--->
   <script src="https://kit.fontawesome.com/6d64fe8c14.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <!-- bootstrap -->
@@ -111,112 +102,35 @@ session_start();
 
         <!-----######################## END DELETE MODAL ############################################################---->
 
+
+        <!-- search form ----->
         <div class="row">
           <div class="col-md-12 col-sm-12">
+            <form class="form-inline" action="" method="post">
+              <label for="">All Products</label>
+              <?php
 
-            <!-- <form action="" method="post" class="form-inline">
-              <div class="form-group">
-                <label for="pwd">See All Products in :</label>
-                <?php 
-                   
-                  require_once 'connexion.php';
-                   $q = "SELECT * FROM page_block ORDER BY  title ASC";        
-                   $r = mysqli_query($dbc,$q); 
-                    ?>
-                <select class="form-control" name="product_block_id2" id="product_block_id2">
-                  <option value="0">Select Page Block.</option>
-                  <?php  
-                  while ($data = mysqli_fetch_array($r)){
-                   $see_block_id = $data['id'];
-                   $see_block_title = $data['title']; 
-                   ?>
-                  <option value="<?php echo $see_block_id;?>"> <?php echo $see_block_title; ?> </option>
-                  <?php } ?>
+              require_once 'connexion.php';
+              $q = "SELECT * FROM page_block ORDER BY title ASC";
+              $r =mysqli_query($dbc,$q);
+              ?>
+            <select class="form-control" name="product_block_id2" id="product_block_id2">
+              <option value="0">Select a Block</option>
+              <?php while ($data =mysqli_fetch_array($r)){
+                $see_block_id =$data['id'];
+                $see_block_title = $data['title'];
+                ?>
+                <option value="<?php echo $see_block_id;?>"> <?php echo $see_block_title; ?> </option>
 
-                </select>
+              <?php } ?>
+            </select>
 
-              </div>
+            <button type="submit" class="btn btn-info3" name="posted_block_id">Go</button>
+            </form>
 
-             
-              <input type="hidden" id="product_block_title" value="<?php echo $see_block_title; ?>"> 
-              <button id="send_block_id" name="send_block_id" class="btn btn-info3">Go !</button>
 
-            </form> -->
-
-            <form id="app-cover" action="" method="post">
-            <div id="select-box">
-                    <input type="checkbox" class="options-view-button-css"  name="product_block_id2" id="product_block_id2">
-                    <div id="select-button" class="brd">
-                            <div id="selected-value">
-                                <span>All Products</span>
-                            </div>
-                            <?php 
-                   
-                   require_once 'connexion.php';
-                    $q = "SELECT * FROM page_block ORDER BY  title ASC";        
-                    $r = mysqli_query($dbc,$q); 
-                     ?>
-                            <div id="chevrons">
-                                    <i class="fas fa-chevron-up"></i>
-                                    <i class="fas fa-chevron-down"></i>
-                            </div>
-                    </div>
-                    <?php  
-                  while ($data = mysqli_fetch_array($r)){
-                   $see_block_id = $data['id'];
-                   $see_block_title = $data['title']; 
-                   ?>
-                    <div id="options">
-                             <div class="option">
-                                    <input class="s-c top" type="radio" name="platform" value="<?php echo $see_block_id;?>">
-                                    <input class="s-c bottom" type="radio" name="platform" value="<?php echo $see_block_id;?>">
-                                    <i class="fab fa-codepen"></i>
-                                    <span class="label"> <?php echo $see_block_title; ?></span>
-                                    <span class="opt-val"> <?php echo $see_block_title; ?></span>
-                            </div>
-                  <?php } ?>          
-                          <!--  <div class="option">
-                                    <input class="s-c top" type="radio" name="platform" value="dribbble">
-                                    <input class="s-c bottom" type="radio" name="platform" value="dribbble">
-                                    <i class="fab fa-dribbble"></i>
-                                    <span class="label">Dribbble</span>
-                                    <span class="opt-val">Dribbble</span>
-                            </div>
-                            <div class="option">
-                                    <input class="s-c top" type="radio" name="platform" value="behance">
-                                    <input class="s-c bottom" type="radio" name="platform" value="behance">
-                                    <i class="fab fa-behance"></i>
-                                    <span class="label">Behance</span>
-                                    <span class="opt-val">Behance</span>
-                            </div>
-                            <div class="option">
-                                    <input class="s-c top" type="radio" name="platform" value="hackerrank">
-                                    <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
-                                    <i class="fab fa-hackerrank"></i>
-                                    <span class="label">HackerRank</span>
-                                    <span class="opt-val">HackerRank</span>
-                            </div>
-                            <div class="option">
-                                    <input class="s-c top" type="radio" name="platform" value="stackoverflow">
-                                    <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
-                                    <i class="fab fa-stack-overflow"></i>
-                                    <span class="label">StackOverflow</span>
-                                    <span class="opt-val">StackOverflow</span>
-                            </div>
-                            <div class="option">
-                                    <input class="s-c top" type="radio" name="platform" value="freecodecamp">
-                                    <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
-                                    <i class="fab fa-free-code-camp"></i>
-                                    <span class="label">FreeCodeCamp</span>
-                                    <span class="opt-val">FreeCodeCamp</span>
-                            </div> -->
-                            <div id="option-bg"></div>
-                    </div>
-            </div>
-    </form>
 
           </div>
-
         </div>
 
 
@@ -224,21 +138,15 @@ session_start();
 
 
         <div class="row">
-
-          <?php  
-             if(isset($_POST['send_block_id'])){
-                 $product_block_id2 = $_POST['product_block_id2'];
+          <div class="col-md-12">
+            <?php  
+            if(isset($_POST['posted_block_id'])){
+                $product_block_id2 = $_POST['product_block_id2'];
               include('product_table.php');  
-             }
+            }
             ?>
-
+          </div>
         </div>
-
-
-
-
-
-
       </div>
     </div>
 
@@ -458,7 +366,7 @@ session_start();
   </script>
 
 
-   
+
 
 
 </body>

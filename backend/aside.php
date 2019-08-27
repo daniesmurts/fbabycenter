@@ -6,7 +6,7 @@
     <ul>
         <li><a href="/backend/all_categories.php">All categories</a></li>
     </ul>
-    <h4 class="ml-3">Update</h4>
+    <!-- <h4 class="ml-3">Update</h4>
     <ul>
         <li><a href="/backend/add_category.php">Add A Category</a></li>
         <li><a href="/backend/add_product.php">Add Product</a></li>
@@ -20,7 +20,7 @@
         <li><a href="/backend/add_advert.php">Add Advert</a></li>
         <li><a href="/backend/add_review.php">Add Latest reviewed</a></li>
         <li><a href="/backend/add_hot_deal.php">Add Hot Deal</a></li>
-    </ul>
+    </ul> -->
 </div> 
 
 
@@ -42,7 +42,7 @@
         </li>
 
 
-        <li>
+        <!-- <li>
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Add / Update</a>
             <ul class="collapse list-unstyled" id="pageSubmenu"> 
                 <li><a href="/backend/101/index.php">Add A Product</a></li>
@@ -68,7 +68,7 @@
                 <li><a href="/backend/add_hot_deal.php">Add Hot Deal</a></li>
                 <li><a href="/backend/add_brand.php">Add Brand</a></li>
             </ul>
-        </li>  
+        </li>   -->
         
     </ul>
 
