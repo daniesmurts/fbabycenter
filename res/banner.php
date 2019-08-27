@@ -4,20 +4,20 @@
 		<div class="row fill_height">
 
 			<?php 
-
-$q = "SELECT * FROM banner ORDER BY id DESC LIMIT 1";    
+$block_id = 1;
+$q = "SELECT * FROM all_products WHERE block_id = $block_id  ORDER BY id DESC LIMIT 1";    
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title']; 
 $cover =  $data['cover']; 
-$name_of_promotion =  $data['name_of_promotion']; 
+$name_of_promotion =  $data['descpt']; 
 $new_price =  $data['new_price']; 
-$old_price =  $data['old_price']; 
+$old_price =  $data['price']; 
 
 
 ?>
 
-			<div class="banner_product_image"><img src="backend/assets/posted_images/<?php echo $cover; ?>" alt="">
+			<div class="banner_product_image"><img src="backend/upload/<?php echo $cover; ?>" alt="">
 			</div>
 
 			<div class="col-lg-5 offset-lg-4 fill_height">
