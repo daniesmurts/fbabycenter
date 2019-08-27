@@ -77,7 +77,7 @@
             <a href="#" class="download">Problem?</a>
         </li>
         <li>
-        <a  class="download" href="logout.php">Logout</a>
+        <a  class="download" href="login/logout.php">Logout</a>
         </li>
     </ul>
 </nav>
