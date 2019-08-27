@@ -13,8 +13,6 @@ $cover =  $data['cover'];
 $name_of_promotion =  $data['name_of_promotion']; 
 $new_price =  $data['new_price']; 
 $old_price =  $data['old_price']; 
-
-
 ?>
 
 			<div class="banner_product_image"><img src="backend/assets/posted_images/<?php echo $cover; ?>" alt="">

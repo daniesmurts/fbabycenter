@@ -78,7 +78,7 @@
 
 
           <div class="form-group">
-            <label for=""> Enter Product Price :</label>
+            <label for=""> Discount Price :</label>
             <input type="text" class="form-control" name="new_price" id="product_new_price">
           </div>
 

@@ -61,8 +61,8 @@
                                     <td><img src="upload/<?php echo $row["cover"]; ?>" class="img-thumbnail" width="50" height="35" /></td>  
                                     <td><?php echo $row["title"] ; ?></td>  
                                     <td><?php echo $row["descpt"]; ?></td>
-                                    <td><button type="button" name="update" id="<?php echo $row["id"]; ?>" class="btn btn-warning btn-xs update">Update</button></td>
-                                    <td><button type="button" name="delete" id="<?php echo  $row["id"]; ?>" class="btn btn-danger btn-xs delete">Delete</button></td>
+                                    <td><button type="button" name="update" id="<?php echo $row["id"]; ?>" class="btn btn-info2 btn-xs update">Update</button></td>
+                                    <td><button type="button" name="delete" id="<?php echo  $row["id"]; ?>" class="btn btn-info-red btn-xs delete">Delete</button></td>
                                      
                                </tr>   
                         <?php
