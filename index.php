@@ -132,7 +132,7 @@ require_once 'backend/assets/includes/connexion.php';
 					<div class="col-lg-3 col-md-6 char_col">
 
 						<div class="char_item d-flex flex-row align-items-center justify-content-start">
-							<div class="char_icon"><img src="images/char_1.png" alt=""></div>
+							<div class="char_icon"><img src="images/delivery.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Delivery</div>
 								<div class="char_subtitle">In and around Kampala</div>
@@ -144,7 +144,7 @@ require_once 'backend/assets/includes/connexion.php';
 					<div class="col-lg-3 col-md-6 char_col">
 
 						<div class="char_item d-flex flex-row align-items-center justify-content-start">
-							<div class="char_icon"><img src="images/char_2.png" alt=""></div>
+							<div class="char_icon"><img src="images/return.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Return Policy</div>
 								<div class="char_subtitle">Upto 3 days</div>
@@ -156,7 +156,7 @@ require_once 'backend/assets/includes/connexion.php';
 					<div class="col-lg-3 col-md-6 char_col">
 
 						<div class="char_item d-flex flex-row align-items-center justify-content-start">
-							<div class="char_icon"><img src="images/char_3.png" alt=""></div>
+							<div class="char_icon"><img src="images/pay.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Pay with</div>
 								<div class="char_subtitle">Mobile money/Cash</div>
@@ -168,7 +168,7 @@ require_once 'backend/assets/includes/connexion.php';
 					<div class="col-lg-3 col-md-6 char_col">
 
 						<div class="char_item d-flex flex-row align-items-center justify-content-start">
-							<div class="char_icon"><img src="images/char_4.png" alt=""></div>
+							<div class="char_icon"><img src="images/free.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Free Delivery</div>
 								<div class="char_subtitle">from UGX 350,000</div>
@@ -260,7 +260,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_1.png" alt=""></div>
+									<div class="popular_category_image"><img src="images/popular_1.svg" alt=""></div>
 									<div class="popular_category_text">Clothes</div>
 								</div>
 							</div>
@@ -269,7 +269,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_2.png" alt=""></div>
+									<div class="popular_category_image"><img src="images/popular_2.svg" alt=""></div>
 									<div class="popular_category_text">Toys</div>
 								</div>
 							</div>
@@ -278,7 +278,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_3.png" alt=""></div>
+									<div class="popular_category_image"><img src="images/popular_3.svg" alt=""></div>
 									<div class="popular_category_text">Carriers</div>
 								</div>
 							</div>
@@ -287,7 +287,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_4.png" alt=""></div>
+									<div class="popular_category_image"><img src="images/popular_4.svg" alt=""></div>
 									<div class="popular_category_text">Car seats</div>
 								</div>
 							</div>
@@ -296,7 +296,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_5.png" alt=""></div>
+									<div class="popular_category_image"><img src="images/popular_5.svg" alt=""></div>
 									<div class="popular_category_text">Furniture</div>
 								</div>
 							</div>
