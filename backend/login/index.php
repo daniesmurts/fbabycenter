@@ -69,7 +69,14 @@ ob_end_flush();
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
+<<<<<<< HEAD
 				<form method="post" action="" class="login100-form validate-form">
+=======
+				<form class="login100-form validate-form">
+				<span class="login100-form-title p-b-23">
+						FbabyCentre Back Office
+					</span>
+>>>>>>> 7dfb5bf2b0e0480d1969a8c5d3de4ccc62773f99
 					<span class="login100-form-title p-b-43">
 						Login to continue
 					</span>

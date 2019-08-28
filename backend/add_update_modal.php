@@ -31,7 +31,7 @@
                   $q = "SELECT * FROM page_block ORDER BY  title ASC";        
                   $r = mysqli_query($dbc,$q);
                    ?>
-              <select class="form-control" name="block_id" id="product_block_id">
+              <select class="form-control" name="block_id" id="product_block_id" required>
                 <option value="0">Select Page Block.</option>
                 <?php while ($data = mysqli_fetch_array($r)){
                   $categ_id = $data['id'];
@@ -52,7 +52,7 @@
                   $q = "SELECT * FROM categories ORDER BY  title ASC";        
                   $r = mysqli_query($dbc,$q);
                    ?>
-              <select class="form-control" name="categ_id" id="product_categ_id">
+              <select class="form-control" name="categ_id" id="product_categ_id" required>
                 <option value="0">Select category.</option>
                 <?php while ($data = mysqli_fetch_array($r)){
                   $categ_id = $data['id'];
