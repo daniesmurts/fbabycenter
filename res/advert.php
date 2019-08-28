@@ -17,7 +17,7 @@ $descpt = $data['descpt'];
                             <div class="advert_text"><?php echo $descpt; ?></div>
                         </div>
                         <div class="ml-auto">
-                            <div class="advert_image"><img src="backend/assets/posted_images/<?php echo $cover; ?>" alt=""></div>
+                            <div class="advert_image"><img src="backend/upload/<?php echo $cover; ?>" alt=""></div>
                         </div>
                     </div>
 				</div>

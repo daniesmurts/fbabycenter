@@ -18,7 +18,7 @@ $old_price =  $data['old_price'];
 <!-- Best Sellers Item -->
 <div class="bestsellers_item discount">
     <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-        <div class="bestsellers_image"><img src="backend/assets/posted_images/<?php echo $cover; ?>" alt=""></div>
+        <div class="bestsellers_image"><img src="backend/upload/<?php echo $cover; ?>" alt=""></div>
         <div class="bestsellers_content">
         <?php
                     $q2 = "SELECT * FROM categories WHERE id=$categ_id";    

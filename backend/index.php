@@ -1,6 +1,6 @@
 <?php session_start(); ob_start();
         if(!(isset($_SESSION['username']))){
-            // header("../location:index.php");
+             header("location: login/index.php");
         }
         ob_end_flush();
 ?>
