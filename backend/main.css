@@ -37,6 +37,28 @@ rgb(61, 165, 244);
 #7386D5
 
 #6d7fcc
+
+
+/* Color Theme Swatches in Hex */
+.Callen-Lorde-1-hex { color: #D979AE; }
+.Callen-Lorde-2-hex { color: #3B82BF; }
+.Callen-Lorde-3-hex { color: #78BFB8; }
+.Callen-Lorde-4-hex { color: #F2BE22; }
+.Callen-Lorde-5-hex { color: #D94848; }
+
+/* Color Theme Swatches in RGBA */
+.Callen-Lorde-1-rgba { color: rgba(216, 121, 173, 1); }
+.Callen-Lorde-2-rgba { color: rgba(59, 129, 191, 1); }
+.Callen-Lorde-3-rgba { color: rgba(120, 191, 184, 1); }
+.Callen-Lorde-4-rgba { color: rgba(242, 190, 33, 1); }
+.Callen-Lorde-5-rgba { color: rgba(216, 71, 71, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Callen-Lorde-1-hsla { color: hsla(326, 55, 66, 1); }
+.Callen-Lorde-2-hsla { color: hsla(208, 52, 49, 1); }
+.Callen-Lorde-3-hsla { color: hsla(174, 35, 61, 1); }
+.Callen-Lorde-4-hsla { color: hsla(45, 89, 54, 1); }
+.Callen-Lorde-5-hsla { color: hsla(0, 65, 56, 1); }
 */
 
 /* general styles */
@@ -539,6 +561,7 @@ a.article:hover {
   background-color: rgba(121, 121, 121, 0.15) !important;
   color: #000 !important;
   border: 1px solid rgba(255, 255, 255, 0) !important;
+  border-radius: 1rem !important;
 }
 .form-control-sm{
   border-radius: 2rem !important;

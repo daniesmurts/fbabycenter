@@ -5,7 +5,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Delete student Data</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Delete Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -17,7 +17,7 @@
                   
                   <input type="hidden" class="form-control" id="delete_id" name="delete_id" >
                      
-                     <h6>Do you want to delete student's data? </h6>
+                     <h6>Do you want to delete the data? </h6>
                       
                       
                       

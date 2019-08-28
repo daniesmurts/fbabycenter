@@ -21,7 +21,7 @@ if(isset($_POST["product_id"]))
 	
 	if(!empty($result))
 	{
-		echo 'Data Deleted';
+		echo 'Data was succesfully Deleted';
 	}
 }
 
@@ -44,7 +44,7 @@ if(isset($_POST["product_id"]))
 	
 	if(!empty($result2))
 	{
-		echo 'Data 2 Deleted';
+		//echo 'Image 2 Deleted';
 	}
 }
 
@@ -68,11 +68,10 @@ if(isset($_POST["product_id"]))
 	
 	if(!empty($result3))
 	{
-		echo 'Data 3 Deleted';
+		//echo 'Image 3 Deleted';
 	}
 }
 
-
-
+ 
 
 ?>

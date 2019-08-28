@@ -1,8 +1,8 @@
-<?php
-session_start(); 
+<?php session_start(); ob_start();
         if(!(isset($_SESSION['username']))){
             // header("../location:index.php");
         }
+        ob_end_flush();
 ?>
 
 
@@ -114,28 +114,21 @@ session_start();
               $q = "SELECT * FROM page_block ORDER BY title ASC";
               $r =mysqli_query($dbc,$q);
               ?>
-            <select class="form-control" name="product_block_id2" id="product_block_id2">
+            <select class="form-control ml-3 mr-3" name="product_block_id2" id="product_block_id2">
               <option value="0">Select a Block</option>
               <?php while ($data =mysqli_fetch_array($r)){
                 $see_block_id =$data['id'];
                 $see_block_title = $data['title'];
                 ?>
                 <option value="<?php echo $see_block_id;?>"> <?php echo $see_block_title; ?> </option>
-
               <?php } ?>
             </select>
-
-            <button type="submit" class="btn btn-info3" name="posted_block_id">Go</button>
+            <button type="submit" class="btn btn-info3 btn-sm" name="posted_block_id">Go</button>
             </form>
-
-
-
           </div>
         </div>
 
-
-
-
+        
 
         <div class="row">
           <div class="col-md-12">
@@ -281,7 +274,7 @@ session_start();
         }
 
 
-        if (title != '' && descpt != '') {
+        if (product_block_id != '' || product_categ_id != '' || title != '' || descpt != '') {
           $.ajax({
             url: "insert.php",
             method: 'POST',
@@ -296,7 +289,7 @@ session_start();
             }
           });
         } else {
-          alert("Both Fields are Required");
+          alert("Please, be sure to fill Product Category, Product Name and Product Block  Fields");
         }
       });
 
