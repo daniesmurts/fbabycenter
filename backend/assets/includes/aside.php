@@ -4,7 +4,8 @@
     </a>
     <h4 class="ml-3">View</h4>
     <ul>
-        <li><a href="/backend/all_categories.php">All categories</a></li>
+        <li><a href="/backend/index.php?see_categ=<?php echo '1';?>">All categories</a></li>
+        <li><a href="/backend/index.php?see_brand=<?php echo '2';?>">Add A Brand</a></li>
     </ul>
     <h4 class="ml-3">Update</h4>
     <ul>
@@ -33,13 +34,17 @@
 
     <ul class="list-unstyled components">
         <h4 class="text-center">Welcome <?php echo  $_SESSION['username']; ?></h4>
-        <li class="active">
+
+        
+        <li><a class="active" href="/backend/index.php?see_categ=<?php echo '1';?>">All categories</a></li>
+        <li><a href="/backend/index.php?see_brand=<?php echo '2';?>">All Brand</a></li>
+        <!-- <li class="active">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li><a href="/backend/all_categories.php">All categories</a></li>
 
             </ul>
-        </li>
+        </li>  -->
 
 
         <li>

@@ -1,5 +1,5 @@
 <?php
-
+/** 
 include('db.php');
 include('function.php'); 
 $output = array();
@@ -49,5 +49,7 @@ $output = array(
 	"data"				=>	$data
 );
 echo json_encode($output); 
+
+****/
 ?>
 

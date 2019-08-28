@@ -137,6 +137,16 @@
                 $product_block_id2 = $_POST['product_block_id2'];
               include('product_table.php');  
             }
+
+            if(isset($_GET['see_brand'])){
+              $see_brand = $_GET['see_brand'];
+            include('brand_table.php');  
+          }
+
+          if(isset($_GET['see_categ'])){
+            $see_categ = $_GET['see_brand'];
+          include('brand_table.php');  
+        }
             ?>
           </div>
         </div>
@@ -183,50 +193,6 @@
         $('#product_uploaded_cover2').html('');
         $('#product_uploaded_cover3').html('');
       });
-
-      /***
-       
-          var dataTable = $('#product_data').DataTable({
-              "processing": true,
-              "serverSide": true,
-              "order": [],
-              "ajax": {
-                url: "fetch.php",
-                type: "POST",
-              },
-              "columnDefs": [{
-                "targets": [0, 3, 4],
-                "orderable": false,
-              }, ],
-
-            });
-
-      ***/
-      /***
-      $('#send_block_id').click(function () {
-        event.preventDefault();
-    var pdt_block_id = $('#product_block_id2').val();
-    var pdt_block_title = $('#product_block_title').val();
-    
-    
-      
-      
-    $.ajax({
-        url: 'fetch.php',
-        type: 'POST',
-        data: { product_block_id2: pdt_block_id, product_block_title: pdt_block_title },
-            success : function(resp){  
-                    alert(resp);
-           // $('#product_block_id2').val(data.pdt_block_id2);
-            $('#product_data').html(resp);
-            }
-        
-    });
-});
-
-****/
-
-
 
 
 

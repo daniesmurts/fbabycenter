@@ -9,9 +9,8 @@ while ($data = mysqli_fetch_array($r)){
 $title = $data['title']; 
 $descpt =  $data['descpt']; 
 $cover =  $data['cover']; 
-$categ_id =  $data['categ_id']; 
-$b_categ_id =  $data['b_categ_id']; 
-$new_price =  $data['new_price'];
+$categ_id =  $data['categ_id'];   
+$new_price =  $data['price'];
 $old_price =  $data['old_price'];  
 ?>
 
