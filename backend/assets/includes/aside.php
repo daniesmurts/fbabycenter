@@ -37,7 +37,7 @@
 
         
         <li><a class="active" href="/backend/index.php?see_categ=<?php echo '1';?>">All categories</a></li>
-        <li><a href="/backend/index.php?see_brand=<?php echo '2';?>">All Brand</a></li>
+        <li><a href="/backend/index.php?see_brand=<?php echo '2';?>">All Brands</a></li> 
         <!-- <li class="active">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
