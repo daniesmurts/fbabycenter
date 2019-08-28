@@ -33,13 +33,13 @@
 
     <ul class="list-unstyled components">
         <h4 class="text-center">Welcome <?php echo  $_SESSION['username']; ?></h4>
-        <li class="active">
+        <!-- <li class="active">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li><a href="/backend/all_categories.php">All categories</a></li>
 
             </ul>
-        </li>
+        </li> -->
 
 
         <!-- <li>
