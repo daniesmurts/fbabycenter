@@ -27,13 +27,12 @@
 					<div class="footer_column">
 						<div class="footer_title">Find it Fast</div>
 						<ul class="footer_list">
-							<li><a href="#">New Arrivals</a></li>
-							<li><a href="#">Feeding</a></li>
-							<li><a href="#">Clothing</a></li>
-							<li><a href="#">Toys</a></li>
-                            <li><a href="#">Bedding</a></li>
-                            <li><a href="#">Nursery Furniture</a></li>
-                            <li><a href="#">Push Chairs</a></li>
+							<li><a href="http://fbabycenter.com/shop.php?view=1">New Arrivals</a></li>
+							<li><a href="http://fbabycenter.com/shop.php?view=6">Feeding</a></li>
+							<li><a href="http://fbabycenter.com/shop.php?view=5">Clothing</a></li>
+							<li><a href="http://fbabycenter.com/shop.php?view=10">Toys</a></li>
+                            <li><a href="http://fbabycenter.com/shop.php?view=8">Nursery Furniture</a></li>
+                            <li><a href="http://fbabycenter.com/shop.php?view=9">Push Chairs</a></li>
 						</ul>
 						<!-- <div class="footer_subtitle">Nursery Furniture</div>
 						<ul class="footer_list">
@@ -45,9 +44,9 @@
 				<div class="col-lg-2">
 					<div class="footer_column">
 						<ul class="footer_list footer_list_2">
-							<li><a href="#">Car seats and Carriers</a></li>
+							<li><a href="http://fbabycenter.com/shop.php?view=4">Car seats and Carriers</a></li>
 							<li><a href="#">Bathing and Changing</a></li>
-							<li><a href="#">Gifts</a></li>
+							<li><a href="http://fbabycenter.com/shop.php?view=7">Gifts</a></li>
 							
 						</ul>
 					</div>
@@ -64,7 +63,7 @@
 							<li><a href="#">Returns / Exchange</a></li>
 							<li><a href="#">FAQs</a></li>
 							<li><a href="#">Product Support</a></li>
-							<li><a href="backend/index.php">Admin Login</a></li>
+							<li><a href="http://fbabycenter.com/backend/login/index.php" target=”_blank”>Admin Login</a></li>
 						</ul>
 					</div>
 				</div>
