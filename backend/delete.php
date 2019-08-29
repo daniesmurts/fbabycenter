@@ -20,9 +20,8 @@ if(isset($_POST["product_id"]))
 	);
 	
 	if(!empty($result))
-	{
-		echo 'Data was succesfully Deleted';
-	}
+	{echo 'Data was succesfully Deleted';
+	} 
 }
 
 
@@ -41,11 +40,7 @@ if(isset($_POST["product_id"]))
 			':id'	=>	$_POST["product_id"]
 		)
 	);
-	
-	if(!empty($result2))
-	{
-		//echo 'Image 2 Deleted';
-	}
+	 
 }
 
 
@@ -65,11 +60,7 @@ if(isset($_POST["product_id"]))
 			':id'	=>	$_POST["product_id"]
 		)
 	);
-	
-	if(!empty($result3))
-	{
-		//echo 'Image 3 Deleted';
-	}
+	 
 }
 
  

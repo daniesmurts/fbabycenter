@@ -69,14 +69,7 @@ ob_end_flush();
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-<<<<<<< HEAD
 				<form method="post" action="" class="login100-form validate-form">
-=======
-				<form class="login100-form validate-form">
-				<span class="login100-form-title p-b-23">
-						FbabyCentre Back Office
-					</span>
->>>>>>> 7dfb5bf2b0e0480d1969a8c5d3de4ccc62773f99
 					<span class="login100-form-title p-b-43">
 						Login to continue
 					</span>
@@ -119,11 +112,11 @@ ob_end_flush();
 					
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							or sign up using
+							<a href="http://fbabycenter.com">Back to Main Site</a> 
 						</span>
 					</div>
 
-					<div class="login100-form-social flex-c-m">
+					<!-- <div class="login100-form-social flex-c-m">
 						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
 							<i class="fa fa-facebook-f" aria-hidden="true"></i>
 						</a>
@@ -131,7 +124,7 @@ ob_end_flush();
 						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 						</a>
-					</div>
+					</div> -->
 				</form>
 
 				<div class="">
