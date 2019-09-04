@@ -98,7 +98,7 @@
         <?php include("db.php"); ?>
 
         <!---Delete Modal ----->
-        <?php include("delete_modal.php"); ?>
+        <?php //include("delete_modal.php"); ?>
 
 
         <!-----######################## END DELETE MODAL ############################################################---->
@@ -109,8 +109,10 @@
           <div class="col-md-12 col-sm-12">
 
             <div class="btn-group">
-              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Select a
-                Block</button>
+              <button type="button" class="btn btn-success dropdown-toggle btn-lg" data-toggle="dropdown"> Select a
+                Block </button>
+
+               
               <div class="dropdown-menu">
 
                 <?php 
@@ -323,13 +325,46 @@
 
 
 
+      $(document).on('click', '.delete', function(){
+		var product_id = $(this).attr("id");
+    
+ /**    var block_id = $('#delete_product_block_id').val();
+    var url = 'index.php?'; 
+    url += 'see_block_id=' + $('#delete_product_block_id').val();
+**/
 
-      $(document).on('click', '.delete', function () {
+		if(confirm("Are you sure you want to delete this?"))
+		{
+    var block_id = $('#delete_product_block_id').val();
+    var url = 'index.php?'; 
+    url += 'see_block_id=' + $('#delete_product_block_id').val();
+			$.ajax({
+				url:"delete_new.php",
+				method:"POST",
+				data:{product_id: product_id},
+				success:function(data)
+				{
+					alert(data);
+          window.location.replace(url);
+					//dataTable.ajax.reload();
+				}
+			});
+		}
+		else
+		{
+			return false;	
+		}
+	});
+
+
+
+
+    /**   $(document).on('click', '.delete', function () {
         var product_id = $(this).attr("id");
 
-       /*** var url = 'index.php?'; 
-            url += 'see_block_id=' + $('#product_block_id').val();***/
-        if (confirm("Are you sure you want to delete this?")) {
+       // var url = 'index.php?'; 
+          //  url += 'see_block_id=' + $('#product_block_id').val();***/
+     /**    if (confirm("Are you sure you want to delete this?")) {
           $.ajax({
             url: "delete.php",
             method: "POST",
@@ -344,10 +379,13 @@
         } else {
           return false;
         }
-      });
+      });  **/
 
 
     });
+
+
+    
   </script>
 
 

@@ -63,12 +63,31 @@
         </td>
         <td><?php echo $row["title"] ; ?></td>
         <td><?php echo $row["descpt"]; ?></td>
+         
+        <input type="hidden" name="delete_product_block_id" id="delete_product_block_id"  value="<?php echo $row["block_id"]; ?>">
         <td><button type="button" name="update" id="<?php echo $row["id"]; ?>" class="btn btn-info2 btn-xs update"><i
               class="fas fa-edit fa-2x"></i></button>
         </td>
-        <td><a href="index.php?see_block_id=<?php echo $row["block_id"]; ?>" id="<?php echo  $row["id"]; ?>"
-            class="btn btn-info-red btn-xs delete"><i class="fas fa-trash-alt fa-2x"></i></button>
+
+        <td><button type="button" name="delete" id="<?php echo $row["id"]; ?>" class="btn btn-info-red btn-xs delete"><i
+              class="fas fa-trash-alt fa-2x "></i></button>
         </td>
+
+
+          
+
+        
+
+
+
+
+
+
+
+
+      <!--  <td><button type="button" name="delete" id="<?php echo $row["id"]; ?>" class="btn btn-info-red btn-xs delete"><i
+              class="fas fa-trash-alt fa-2x"></i></button>
+        </td>  -->
 
       </tr>
       <?php
