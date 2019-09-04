@@ -1,20 +1,12 @@
 <hr>
 <div class="row mb-5 mt-5">
-  <?php  
-                require_once 'connexion.php';
-                 $query1 ="SELECT * FROM page_block WHERE id = $product_block_id2 ";  
-              $result1 = mysqli_query($dbc, $query1);  
-              ?>
+  
   <div class="col-md-6 col-sm-6">
-    <?php  
-                          while($row1 = mysqli_fetch_array($result1))  
-                          {  
-                              ?>
+    
     <div>
-      <h2> <?php echo $row1['title']; ?></h2>
+      <h2> Brands </h2>
     </div>
-
-    <?php } ?>
+ 
   </div>
   <div class="col-md-6 col-sm-6">
 
@@ -33,7 +25,7 @@
 
 <?php  
                 require_once 'connexion.php';
-                 $query ="SELECT * FROM all_products WHERE block_id = $product_block_id2 ORDER BY title DESC";  
+                 $query ="SELECT * FROM brand   ORDER BY title DESC";  
                 $result = mysqli_query($dbc, $query);  
                 ?>
 

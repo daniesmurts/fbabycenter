@@ -57,10 +57,12 @@ if(isset($_POST["operation"]))
 			)
 		);
 		if(!empty($result))
-		{
-			echo 'Data Inserted';
+		{ 
+			 echo 'Data Inserted';
 		}
 	}
+
+
 	if($_POST["operation"] == "Edit")
 	{
 		$cover = '';

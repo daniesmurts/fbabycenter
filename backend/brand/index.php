@@ -91,8 +91,7 @@
 
 
         <!-- Add_Edit Modal -->
-        <?php include("add_update_modal.php"); ?>
-        <?php include("add_update_modal_brand.php"); ?>
+        <?php include("add_update_modal.php"); ?> 
         <!--End Modal-->
 
         <?php include("db.php"); ?>
@@ -104,58 +103,14 @@
         <!-----######################## END DELETE MODAL ############################################################---->
 
 
-        <!-- search form ----->
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-
-            <div class="btn-group">
-              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Select a
-                Block</button>
-              <div class="dropdown-menu">
-
-                <?php 
-                require_once 'connexion.php';
-                $q = "SELECT * FROM page_block ORDER BY title ASC";
-                $r =mysqli_query($dbc,$q);
-
-                 while ($data =mysqli_fetch_array($r)){
-                $see_block_id =$data['id'];
-                $see_block_title = $data['title'];
-                ?>
-
-
-                <a href="index.php?see_block_id=<?php echo $see_block_id;?>" class="dropdown-item">
-                  <?php echo $see_block_title; ?></a>
-
-                <?php } ?>
-              </div>
-            </div>
-             
-          </div>
-        </div>
+         
 
 
 
         <div class="row">
           <div class="col-md-12">
             <?php  
-            if(isset($_GET['see_block_id'])){
-                $product_block_id2 = $_GET['see_block_id'];
-              include('product_table.php');  
-            }
-
-            if(isset($_GET['see_brand'])){
-              $see_brand = $_GET['see_brand'];
-              
-              echo "SEE BRAND IS: $see_brand";
-           // include('brand_table.php');  
-          }
-
-          if(isset($_GET['see_categ'])){
-            $see_categ = $_GET['see_brand'];
-          include('categ_table.php');  
-        }
-            ?>
+              include('product_table.php');  ?>
           </div>
         </div>
       </div>
@@ -197,27 +152,15 @@
         $('.modal-title').text("Add Product");
         $('#action').val("Add");
         $('#operation').val("Add");
-        $('#product_uploaded_cover').html('');
-        $('#product_uploaded_cover2').html('');
-        $('#product_uploaded_cover3').html('');
+        $('#product_uploaded_cover').html(''); 
       });
 
 
 
       $(document).on('submit', '#product_form', function (event) {
-        event.preventDefault();
-        var categ_id = $('#product_categ_id').val();
-        var block_id = $('#product_block_id').val();
-        var title = $('#product_title').val();
-        var price = $('#product_price').val();
-        var new_price = $('#product_new_price').val();
-        var descpt = $('#product_descpt').val();
-        var color = $('#product_color').val();
-        var size = $('#product_size').val();
-        var quantity = $('#product_quantity').val();
-        var available = $('#product_available').val();
-        var discount = $('#product_discount').val();
-        var newz = $('#product_newz').val();
+        event.preventDefault();  
+        var title = $('#product_title').val(); 
+        var descpt = $('#product_descpt').val(); 
 
 
         var extension = $('#product_cover').val().split('.').pop().toLowerCase();
@@ -229,30 +172,12 @@
           }
         }
 
-        var extension2 = $('#product_cover2').val().split('.').pop().toLowerCase();
-        if (extension2 != '') {
-          if (jQuery.inArray(extension2, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
-            alert("Invalid Image File");
-            $('#product_cover2').val('');
-            return false;
-          }
-        }
-
-        var extension3 = $('#product_cover3').val().split('.').pop().toLowerCase();
-        if (extension3 != '') {
-          if (jQuery.inArray(extension3, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
-            alert("Invalid Image File");
-            $('#product_cover3').val('');
-            return false;
-          }
-        }
+        
 
 
-        if (product_block_id != '' || product_categ_id != '' || title != '' || descpt != '') {
-
-          var url = 'index.php?'; 
-               url += 'see_block_id=' + $('#product_block_id').val();
-   // handle removal of last &.
+        if (title != '' || descpt != '') {
+ 
+    
 
    
 
@@ -264,14 +189,17 @@
             contentType: false,
             processData: false,
             success: function (data) {
+               
+
               alert(data);
-              $('#product_form')[0].reset();
-              $('#productModal').modal('hide'); 
-              window.location.replace(url);
+          $('#product_form')[0].reset();
+          $('#productModal').modal('hide');
+          dataTable.ajax.reload();
+
             }
           });
         } else {
-          //alert("Please, be sure to fill Product Category, Product Name and Product Block  Fields");
+          alert("Please, be sure to fill Brand Name and Brand Description Fields");
         }
       });
 
@@ -289,34 +217,20 @@
           dataType: "json",
           success: function (data) {
             $('#productModal').modal('show');
-
-            $('#product_categ_id').val(data.categ_id);
-            $('#product_block_id').val(data.block_id);
-            $('#product_title').val(data.title);
-            $('#product_price').val(data.price);
-            $('#product_new_price').val(data.new_price);
-            $('#product_descpt').val(data.descpt);
-            $('#product_color').val(data.color);
-            $('#product_size').val(data.size);
-            $('#product_quantity').val(data.quantity);
-            $('#product_available').val(data.available);
-            $('#product_discount').val(data.discount);
-            $('#product_newz').val(data.newz);
+ 
+            $('#product_title').val(data.title); 
+            $('#product_descpt').val(data.descpt); 
 
 
             $('.modal-title').text("Edit Product");
             $('#product_id').val(product_id);
 
-            $('#product_uploaded_cover').html(data.cover);
-            $('#product_uploaded_cover2').html(data.cover2);
-            $('#product_uploaded_cover3').html(data.cover3);
+            $('#product_uploaded_cover').html(data.cover); 
 
-            $('#action').val("Edit");
-            $('#operation').val("Edit");
-
-            var url = 'index.php?'; 
-               url += 'see_block_id=' + $('#product_block_id').val();
-              window.location.replace(url);
+            
+        $('#action').val("Edit");
+        $('#operation').val("Edit");
+ 
           }
         })
       });
@@ -336,10 +250,11 @@
             data: {
               product_id: product_id
             },
-            success: function (data) {
-              alert(data);
-              dataTable.ajax.reload(); 
-            }
+            success:function(data)
+        {
+          alert(data);
+          dataTable.ajax.reload();
+        }
           });
         } else {
           return false;
