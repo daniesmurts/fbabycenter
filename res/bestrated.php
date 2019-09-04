@@ -17,7 +17,7 @@ $new_price = $data['new_price'];
         <div class="border_active"></div>
         <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
             <div class="product_image d-flex flex-column align-items-center justify-content-center">
-                <img src="backend/assets/posted_images/<?php echo $cover; ?>" alt=""></div>
+                <img src="backend/upload/<?php echo $cover; ?>" alt=""></div>
             <div class="product_content">
                 <!-- <div class="product_price discount">$225<span>$300</span></div> -->
                 <div class="product_price"> UGX <?php echo $new_price; ?></div>
