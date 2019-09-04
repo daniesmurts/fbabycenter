@@ -314,9 +314,9 @@
             $('#action').val("Edit");
             $('#operation').val("Edit");
 
-            var url = 'index.php?'; 
+           /**  var url = 'index.php?'; 
                url += 'see_block_id=' + $('#product_block_id').val();
-              window.location.replace(url);
+              window.location.replace(url); ****/
           }
         })
       });

@@ -22,7 +22,7 @@
       <button type="button" id="add_button" data-toggle="modal" data-target="#productModal"
         class="btn btn-info3 mb-2">Add</button>
     </div>
-  
+
   </div>
 
 </div>
@@ -31,9 +31,9 @@
 
 
 
-<?php  
+<?php  // Ok
                 require_once 'connexion.php';
-                 $query ="SELECT * FROM all_products WHERE block_id = $product_block_id2 ORDER BY title DESC";  
+                 $query ="SELECT * FROM all_products WHERE block_id = $product_block_id2 ORDER BY title ASC";  
                 $result = mysqli_query($dbc, $query);  
                 ?>
 
@@ -63,10 +63,12 @@
         </td>
         <td><?php echo $row["title"] ; ?></td>
         <td><?php echo $row["descpt"]; ?></td>
-        <td><button type="button" name="update" id="<?php echo $row["id"]; ?>"
-            class="btn btn-info2 btn-xs update"><i class="fas fa-edit fa-2x"></i></button></td>
-        <td><a  href="index.php?see_block_id=<?php echo $row["block_id"]; ?>" id="<?php echo  $row["id"]; ?>"
-            class="btn btn-info-red btn-xs delete"><i class="fas fa-trash-alt fa-2x"></i></button></td>
+        <td><button type="button" name="update" id="<?php echo $row["id"]; ?>" class="btn btn-info2 btn-xs update"><i
+              class="fas fa-edit fa-2x"></i></button>
+        </td>
+        <td><a href="index.php?see_block_id=<?php echo $row["block_id"]; ?>" id="<?php echo  $row["id"]; ?>"
+            class="btn btn-info-red btn-xs delete"><i class="fas fa-trash-alt fa-2x"></i></button>
+        </td>
 
       </tr>
       <?php
