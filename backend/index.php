@@ -91,8 +91,7 @@
 
 
         <!-- Add_Edit Modal -->
-        <?php include("add_update_modal.php"); ?>
-        <?php include("add_update_modal_brand.php"); ?>
+        <?php include("add_update_modal.php"); ?> 
         <!--End Modal-->
 
         <?php include("db.php"); ?>
@@ -145,18 +144,7 @@
                 $product_block_id2 = $_GET['see_block_id'];
               include('product_table.php');  
             }
-
-            if(isset($_GET['see_brand'])){
-              $see_brand = $_GET['see_brand'];
-              
-              echo "SEE BRAND IS: $see_brand";
-           // include('brand_table.php');  
-          }
-
-          if(isset($_GET['see_categ'])){
-            $see_categ = $_GET['see_brand'];
-          include('categ_table.php');  
-        }
+ 
             ?>
           </div>
         </div>

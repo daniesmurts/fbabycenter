@@ -36,8 +36,8 @@
         <h4 class="text-center">Welcome <?php echo  $_SESSION['username']; ?></h4>
 
         
-        <li><a class="active" href="/backend/index.php?see_categ=<?php echo '1';?>">All categories</a></li>
-        <li><a href="/backend/index.php?see_brand=<?php echo '2';?>">All Brands</a></li> 
+        <li><a class="active" href="/backend/categories/index.php">All categories</a></li>
+        <li><a href="/backend/brand/index.php">All Brands</a></li> 
         <!-- <li class="active">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">View</a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
