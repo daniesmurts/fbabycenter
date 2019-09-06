@@ -108,11 +108,11 @@
           <div class="col-md-12 col-sm-12">
 
             <div class="btn-group">
-              <button type="button" class="btn btn-success dropdown-toggle btn-lg" data-toggle="dropdown"> Select a
+              <button type="button" class="btn btn-info3 dropdown-toggle btn-lg" data-toggle="dropdown"> Select a
                 Block </button>
 
                
-              <div class="dropdown-menu">
+              <div class="dropdown-menu backend-dropdown">
 
                 <?php 
                 require_once 'connexion.php';
