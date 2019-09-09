@@ -131,49 +131,86 @@ require_once 'backend/assets/includes/connexion.php';
 					<!-- Char. Item -->
 					<div class="col-lg-3 col-md-6 char_col">
 
-						<div class="char_item d-flex flex-row align-items-center justify-content-start">
-							<div class="char_icon"><img src="images/delivery.svg" alt=""></div>
+						<div class=" d-flex flex-row align-items-center justify-content-start">
+							<div class="card" style="width: 18rem;">
+								<img src="images/imgs/boys1.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text">BABY GIRLS</p>
+								</div>
+							</div>
+							<!-- <div class="char_icon"><img src="images/imgs/img1.jpg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Delivery</div>
 								<div class="char_subtitle">In and around Kampala</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 
 					<!-- Char. Item -->
-					<div class="col-lg-3 col-md-6 char_col">
+					<div class="col-lg-3 col-md-6 col-sm-12 char_col">
 
-						<div class="char_item d-flex flex-row align-items-center justify-content-start">
-							<div class="char_icon"><img src="images/return.svg" alt=""></div>
+						<div class=" d-flex flex-row align-items-center justify-content-start">
+						<div class="card" style="width: 18rem;">
+								<img src="images/baby2.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text">NEW BORNS</p>
+								</div>
+							</div>
+							<!-- <div class="char_icon"><img src="images/return.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Return Policy</div>
 								<div class="char_subtitle">Upto 3 days</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 
 					<!-- Char. Item -->
 					<div class="col-lg-3 col-md-6 char_col">
-
-						<div class="char_item d-flex flex-row align-items-center justify-content-start">
+					<div class=" d-flex flex-row align-items-center justify-content-start">
+						<div class="card" style="width: 18rem;">
+								<img src="images/imgs/girl7.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text">BABY GIRLS</p>
+								</div>
+							</div>
+							<!-- <div class="char_icon"><img src="images/return.svg" alt=""></div>
+							<div class="char_content">
+								<div class="char_title">Return Policy</div>
+								<div class="char_subtitle">Upto 3 days</div>
+							</div> -->
+						</div>
+						<!-- <div class="char_item d-flex flex-row align-items-center justify-content-start">
 							<div class="char_icon"><img src="images/pay.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Pay with</div>
 								<div class="char_subtitle">Mobile money/Cash</div>
 							</div>
-						</div>
-					</div>
+						</div>-->
+					</div> 
 
 					<!-- Char. Item -->
 					<div class="col-lg-3 col-md-6 char_col">
-
+					<div class=" d-flex flex-row align-items-center justify-content-start">
+						<div class="card" style="width: 18rem;">
+								<img src="images/imgs/img1.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text">BABY GIRLS</p>
+								</div>
+							</div>
+							<!-- <div class="char_icon"><img src="images/return.svg" alt=""></div>
+							<div class="char_content">
+								<div class="char_title">Return Policy</div>
+								<div class="char_subtitle">Upto 3 days</div>
+							</div> -->
+						</div>
+<!-- 
 						<div class="char_item d-flex flex-row align-items-center justify-content-start">
 							<div class="char_icon"><img src="images/free.svg" alt=""></div>
 							<div class="char_content">
 								<div class="char_title">Free Delivery</div>
 								<div class="char_subtitle">from UGX 350,000</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -184,13 +221,13 @@ require_once 'backend/assets/includes/connexion.php';
 		<div class="deals_featured">
 			<div class="container">
 				<div class="row">
-					
 
-						<!-- Deals -->
 
-						<?php include ('res/deals.php') ?>
+					<!-- Deals -->
 
-					
+					<?php include ('res/deals.php') ?>
+
+
 
 					<!-- Featured -->
 					<div class="featured">
