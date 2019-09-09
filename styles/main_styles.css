@@ -2129,8 +2129,8 @@ select option {
 
 .popular_category {
 	height: 216px;
-	padding-left: 40px;
-	padding-right: 40px;
+	/* padding-left: 40px;
+	padding-right: 40px; */
 }
 
 .popular_categories_slider .owl-item:nth-child(even) {

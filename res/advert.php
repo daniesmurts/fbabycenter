@@ -1,6 +1,6 @@
 <?php 
 
-$q = "SELECT * FROM all_products  WHERE block_id='1'  ORDER BY id DESC LIMIT 3";            
+$q = "SELECT * FROM all_products  WHERE block_id='14'  ORDER BY id DESC LIMIT 3";            
 $r = mysqli_query($dbc,$q);
 while ($data = mysqli_fetch_array($r)){ 
 $title = $data['title']; 
@@ -20,7 +20,5 @@ $descpt = $data['descpt'];
                             <div class="advert_image"><img src="backend/upload/<?php echo $cover; ?>" alt=""></div>
                         </div>
                     </div>
-				</div>
-
-                 
+				</div>          
 <?php } ?>                

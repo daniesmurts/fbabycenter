@@ -27,11 +27,11 @@ require_once 'backend/assets/includes/connexion.php';
 										<a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
 										<ul>
 										<?php
-                    $q2 = "SELECT * FROM brands ORDER BY id DESC LIMIT 5";    
-                    $r2 = mysqli_query($dbc,$q2);
+                    $q = "SELECT * FROM brands ORDER BY id DESC LIMIT 5";    
+                    $r = mysqli_query($dbc,$q2);
                     while ($data2 = mysqli_fetch_array($r2)){ 
-                        $title =  $data2['title']; 
-                        $id =  $data2['id']; 
+                        $title =  $data['title']; 
+                        $id =  $data['id']; 
 				?> 						
 				<li><a href="brands.php?see=<?php echo $id; ?>"><?php echo $title; ?><i class="fas fa-chevron-down"></i></a></li>
 								<?php } ?>	

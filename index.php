@@ -151,9 +151,9 @@ require_once 'backend/assets/includes/connexion.php';
 
 						<div class=" d-flex flex-row align-items-center justify-content-start">
 						<div class="card" style="width: 18rem;">
-								<img src="images/baby2.jpg" class="card-img-top" alt="...">
+								<img src="images/imgs/dress1.jpg" class="card-img-top" alt="...">
 								<div class="card-body">
-									<p class="card-text">NEW BORNS</p>
+									<p class="card-text">DRESSES</p>
 								</div>
 							</div>
 							<!-- <div class="char_icon"><img src="images/return.svg" alt=""></div>
@@ -192,9 +192,9 @@ require_once 'backend/assets/includes/connexion.php';
 					<div class="col-lg-3 col-md-6 char_col">
 					<div class=" d-flex flex-row align-items-center justify-content-start">
 						<div class="card" style="width: 18rem;">
-								<img src="images/imgs/img1.jpg" class="card-img-top" alt="...">
+								<img src="images/imgs/dress3.jpg" class="card-img-top" alt="...">
 								<div class="card-body">
-									<p class="card-text">BABY GIRLS</p>
+									<p class="card-text">EXCLUSIVE</p>
 								</div>
 							</div>
 							<!-- <div class="char_icon"><img src="images/return.svg" alt=""></div>
@@ -297,7 +297,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_1.svg" alt=""></div>
+									<div class="popular_category_image"><img src="images/imgs/dress3.jpg" alt=""></div>
 									<div class="popular_category_text">Clothes</div>
 								</div>
 							</div>
@@ -306,7 +306,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_2.svg" alt=""></div>
+									<div class="popular_category_image"><img src="images/imgs/dress3.jpg" alt=""></div>
 									<div class="popular_category_text">Toys</div>
 								</div>
 							</div>
@@ -315,7 +315,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_3.svg" alt=""></div>
+									<div class="popular_category_image"><img src="images/imgs/dress3.jpg" alt=""></div>
 									<div class="popular_category_text">Carriers</div>
 								</div>
 							</div>
@@ -324,7 +324,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_4.svg" alt=""></div>
+									<div class="popular_category_image"><img src="images/imgs/dress3.jpg" alt=""></div>
 									<div class="popular_category_text">Car seats</div>
 								</div>
 							</div>
@@ -333,7 +333,7 @@ require_once 'backend/assets/includes/connexion.php';
 							<div class="owl-item">
 								<div
 									class="popular_category d-flex flex-column align-items-center justify-content-center">
-									<div class="popular_category_image"><img src="images/popular_5.svg" alt=""></div>
+									<div class="popular_category_image"><img src="images/imgs/dress3.jpg" alt=""></div>
 									<div class="popular_category_text">Furniture</div>
 								</div>
 							</div>
@@ -595,3 +595,5 @@ require_once 'backend/assets/includes/connexion.php';
 </body>
 
 </html>
+
+
