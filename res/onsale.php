@@ -9,7 +9,7 @@ while ($data = mysqli_fetch_array($r)){
 $title = $data['title']; 
 $cover =  $data['cover'];  
 $color =  $data['color'];  
-$new_price = $data['new_price']; 
+$price = $data['price']; 
 
 
 ?>
@@ -21,7 +21,7 @@ $new_price = $data['new_price'];
                 <img src="backend/upload/<?php echo $cover; ?>" alt=""></div>
             <div class="product_content">
                 <!-- <div class="product_price discount">$225<span>$300</span></div> -->
-                <div class="product_price">UGX <?php echo $new_price; ?></div>
+                <div class="product_price">UGX <?php echo $price; ?></div>
                 <div class="product_name">
                     <div><a href="product.html"> <?php echo $title; ?></a></div>
                 </div>

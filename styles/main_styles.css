@@ -61,6 +61,13 @@
 }
 
 
+/* Purple color*/
+.smurts_colors {
+	color: #6600B2;
+	color: rgb(252, 231, 71);
+	color:#96dd2c;
+	color:#55B7DC;
+}
 
 
 
@@ -819,7 +826,7 @@ select option {
 	right: 0;
 	width: 50px;
 	height: 100%;
-	background: #78BFB8;
+	background: #96dd2c;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -946,7 +953,7 @@ select option {
 .cat_menu_container {
 	width: 293px;
 	height: 100%;
-	background: #D979AE;
+	background: rgb(252, 231, 71);
 	padding-left: 35px;
 	cursor: pointer;
 	z-index: 1;
@@ -1748,7 +1755,7 @@ select option {
 .product_image img {
 	display: block;
 	position: relative;
-	max-width: 100%;
+	max-width: 90%;
 }
 
 .product_content {

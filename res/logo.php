@@ -1,1 +1,1 @@
-<div class="logo"><a href="/index.php">Baby Centre</a></div>
+<div class="logo"><a href="/index.php"><img src="images/imgs/logo.jpeg" class="img-fluid" alt="Responsive image"></a></div>
