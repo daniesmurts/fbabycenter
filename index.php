@@ -19,9 +19,7 @@
 </head>
 
 <body>
-	<?php  
-require_once 'backend/assets/includes/connexion.php';
-?>
+	
 	<div class="super_container">
 
 		<!-- Header -->
@@ -592,6 +590,12 @@ require_once 'backend/assets/includes/connexion.php';
 	<script src="plugins/slick-1.8.0/slick.js"></script>
 	<script src="plugins/easing/easing.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/cat22s.js"></script>
+    <script src="js/networking.js"></script>
+    <script src="js/node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="js/modernizr-custom.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </body>
 
 </html>
